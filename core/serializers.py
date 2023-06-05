@@ -7,7 +7,7 @@ class GrupoSerializer(serializers.ModelSerializer):
         fields = '__all__'
 
 class UsuarioSerializer(serializers.ModelSerializer):
-    grupo = GrupoSerializer()
+    # grupo = GrupoSerializer()
 
     class Meta:
         model = Usuario
