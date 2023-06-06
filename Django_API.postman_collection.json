@@ -1,0 +1,232 @@
+{
+	"info": {
+		"_postman_id": "92229d36-e8f4-4a1d-a347-07343408dabb",
+		"name": "Django API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Criar Grupo",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"titulo\": \"Teste 1\",\n    \"descricao\": \"Grupo de teste\",\n    \"status\": true,\n    \"data_criacao\": \"04/06/2023\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/app/criar-grupo",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"app",
+						"criar-grupo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar Grupos",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Editar Grupo",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"titulo\": \"Teste 1\",\n    \"descricao\": \"Grupo de teste\",\n    \"status\": true,\n    \"data_criacao\": \"04/06/2023\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/app/criar-grupo",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"app",
+						"criar-grupo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Excluir Grupo",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"titulo\": \"Teste 1\",\n    \"descricao\": \"Grupo de teste\",\n    \"status\": true,\n    \"data_criacao\": \"04/06/2023\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/app/excluir-grupo/2",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"app",
+						"excluir-grupo",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Criar Usuário",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nome_completo\": \"José Yan Gonçalves Lipu\",\n    \"data_nascimento\": \"01/05/1997\",\n    \"sexo\": \"Homem\",\n    \"email\": \"emailteste@teste.com\",\n    \"telefone\": \"(67)99999-9999\",\n    \"pais\": \"Brasil\",\n    \"estado\": \"Minas Gerais\",\n    \"cidade\": \"Lavras\",\n    \"bairro\": \"Vila Pitangui\",\n    \"logradouro\": \"\",\n    \"status\": true,\n    \"grupo\": 1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/app/criar-usuario",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"app",
+						"criar-usuario"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar Usuarios",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Editar Usuário",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nome_completo\": \"José Yan Gonçalves Lipu\",\n    \"data_nascimento\": \"01/05/1997\",\n    \"sexo\": \"Homem\",\n    \"email\": \"emailteste@teste.com\",\n    \"telefone\": \"(67)99999-9999\",\n    \"pais\": \"Brasil\",\n    \"estado\": \"Minas Gerais\",\n    \"cidade\": \"Lavras\",\n    \"bairro\": \"Vila Pitangui\",\n    \"logradouro\": \"\",\n    \"status\": true,\n    \"grupo\": 1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/app/editar-usuario/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"app",
+						"editar-usuario",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Excluir Usuário",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nome_completo\": \"José Yan Gonçalves Lipu\",\n    \"data_nascimento\": \"01/05/1997\",\n    \"sexo\": \"Homem\",\n    \"email\": \"emailteste@teste.com\",\n    \"telefone\": \"(67)99999-9999\",\n    \"pais\": \"Brasil\",\n    \"estado\": \"Minas Gerais\",\n    \"cidade\": \"Lavras\",\n    \"bairro\": \"Vila Pitangui\",\n    \"logradouro\": \"\",\n    \"status\": true,\n    \"grupo\": 1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/app/excluir-usuario/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"app",
+						"excluir-usuario",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
