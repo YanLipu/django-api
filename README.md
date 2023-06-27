@@ -54,5 +54,5 @@ Faça o download e instalação do Postman [aqui.](https://learning.postman.com/
 
 Após instalado, importe o arquivo `Django_API.postman_collection.json` na raiz desse diretório.
 
-Após isso basta testar as rotas.
+Após isso, basta testar as rotas.
 
